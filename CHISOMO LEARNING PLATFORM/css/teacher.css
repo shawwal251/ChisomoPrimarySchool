@@ -45,3 +45,25 @@
         white-space: nowrap;
     }
 }
+
+
+/* Responsive teacher assignments table */
+@media (max-width: 768px) {
+    [data-teacher-assignments] {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    [data-teacher-assignments] table {
+        width: 100%;
+        min-width: 650px;
+        border-collapse: collapse;
+    }
+
+    [data-teacher-assignments] th,
+    [data-teacher-assignments] td {
+        white-space: nowrap;
+    }
+}
+
