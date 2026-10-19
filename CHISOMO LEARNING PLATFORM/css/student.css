@@ -1,0 +1,5 @@
+.student-highlight {
+    background: var(--blue-soft);
+    border-radius: 14px;
+    padding: 1rem
+}

@@ -1,0 +1,47 @@
+.teacher-highlight {
+    background: #fff6dc;
+    border-radius: 14px;
+    padding: 1rem
+}
+
+
+/* Responsive students table */
+@media (max-width: 768px) {
+    [data-students] {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    [data-students] table {
+        width: 100%;
+        min-width: 650px;
+        border-collapse: collapse;
+    }
+
+    [data-students] th,
+    [data-students] td {
+        white-space: nowrap;
+    }
+}
+
+
+/* Responsive lessons table */
+@media (max-width: 768px) {
+    [data-teacher-lessons] {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    [data-teacher-lessons] table {
+        width: 100%;
+        min-width: 650px;
+        border-collapse: collapse;
+    }
+
+    [data-teacher-lessons] th,
+    [data-teacher-lessons] td {
+        white-space: nowrap;
+    }
+}

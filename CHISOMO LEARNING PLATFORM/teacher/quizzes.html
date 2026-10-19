@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+            name="description"
+            content="Chisomo Primary School digital learning and teaching portal."
+        >
+
+        <title>Manage quizzes | Chisomo Primary School</title>
+
+        <link
+            rel="icon"
+            href="../assets/logo/chisomo-logo.svg"
+            type="image/svg+xml"
+        >
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <link rel="stylesheet" href="../css/components.css">
+        <link rel="stylesheet" href="../css/teacher.css">
+
+        <script defer src="../js/storage.js"></script>
+        <script defer src="../js/ui.js"></script>
+        <script defer src="../js/navigation.js"></script>
+        <script defer src="../js/app.js"></script>
+    </head>
+
+    <body data-page="teacher-quizzes">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <div class="loading-overlay" role="status" aria-live="polite">
+            <div class="loader-card">
+                <div class="spinner" aria-hidden="true"></div>
+                <strong>Getting your learning space ready…</strong>
+                <span class="small muted">Chisomo Primary School</span>
+            </div>
+        </div>
+
+        <div class="menu-backdrop"></div>
+
+        <div class="app-shell">
+            <aside class="sidebar" aria-label="Main navigation">
+                <a class="sidebar-brand" href="dashboard.html">
+                    <img src="../assets/logo/chisomo-logo.svg" alt="">
+                    <span>
+                        <strong>Chisomo</strong>
+                        <small>Teacher portal</small>
+                    </span>
+                </a>
+
+                <p class="nav-label">Workspace</p>
+
+                <nav class="side-nav">
+                    <a href="dashboard.html" class="">
+                        <span class="nav-icon">🏠</span>
+                        Dashboard
+                    </a>
+
+                    <div class="nav-group">
+                        <button
+                            class="dropdown-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="row">
+                                <span class="nav-icon">📚</span>
+                                Teaching
+                            </span>
+                            <span class="chevron">⌄</span>
+                        </button>
+
+                        <div class="dropdown-menu" hidden>
+                            <a href="classes.html">
+                                <span class="nav-icon">🏫</span>
+                                Classes
+                            </a>
+                            <a href="lessons.html">
+                                <span class="nav-icon">📚</span>
+                                Lessons
+                            </a>
+                            <a href="quizzes.html">
+                                <span class="nav-icon">✏️</span>
+                                Quizzes
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nav-group">
+                        <button
+                            class="dropdown-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="row">
+                                <span class="nav-icon">🗂️</span>
+                                Assessment
+                            </span>
+                            <span class="chevron">⌄</span>
+                        </button>
+
+                        <div class="dropdown-menu" hidden>
+                            <a href="assignments.html">
+                                <span class="nav-icon">📝</span>
+                                Assignments
+                            </a>
+                            <a href="students.html">
+                                <span class="nav-icon">👩🏽‍🎓</span>
+                                Students
+                            </a>
+                            <a href="reports.html">
+                                <span class="nav-icon">📈</span>
+                                Reports
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="../index.html" data-logout>
+                        <span class="nav-icon">↩</span>
+                        Exit portal
+                    </a>
+                </nav>
+
+                <div class="sidebar-bottom">
+                    <button
+                        class="btn btn-light btn-small"
+                        style="width:100%"
+                        data-reset-demo
+                    >
+                        ↻ Reset demo data
+                    </button>
+
+                    <div class="profile-mini">
+                        <div class="avatar">GM</div>
+                        <div>
+                            <strong data-profile-name>Mrs. Grace Moyo</strong>
+                            <small>Class teacher</small>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="app-main">
+                <header class="topbar">
+                    <div class="topbar-left">
+                        <button
+                            class="icon-btn mobile-toggle"
+                            aria-label="Open navigation menu"
+                            aria-expanded="false"
+                        >
+                            ☰
+                        </button>
+
+                        <div>
+                            <div class="breadcrumb">
+                                Chisomo / Teacher portal / Manage quizzes
+                            </div>
+                            <strong>Manage quizzes</strong>
+                        </div>
+                    </div>
+
+                    <div class="topbar-right">
+                        <span class="topbar-date"></span>
+                        <div class="avatar gold">GM</div>
+                    </div>
+                </header>
+
+                <main id="main-content" class="content">
+                    <section class="between wrap">
+                        <div>
+                            <p class="eyebrow">Check understanding</p>
+                            <h1 class="page-title">Quiz management</h1>
+                            <p class="page-subtitle">
+                                Create short quizzes with answer choices and feedback.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-primary" href="create-quiz.html">
+                            ＋ Create quiz
+                        </a>
+                    </section>
+
+                    <section class="grid grid-3" data-teacher-quizzes></section>
+
+                    <footer class="site-footer">
+                        © 2026 Chisomo Primary School · Learn, grow, shine.
+                        <br>
+                        <small>Developed by Group 8.</small>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

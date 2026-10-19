@@ -1,0 +1,241 @@
+.landing {
+    min-height: 100vh;
+    background: radial-gradient(circle at 85% 10%, #e2efff 0, transparent 28%), linear-gradient(145deg, #f9fbff, #edf4ff);
+    display: flex;
+    flex-direction: column
+}
+
+.landing-header {
+    width: min(1180px, calc(100% - 3rem));
+    margin: 0 auto;
+    padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: var(--navy) !important;
+    font-weight: 850;
+    letter-spacing: -.02em
+}
+
+.brand img {
+    width: 48px;
+    height: 48px
+}
+
+.brand small {
+    display: block;
+    color: var(--muted);
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase
+}
+
+.landing-main {
+    width: min(1180px, calc(100% - 3rem));
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0 3rem;
+    flex: 1
+}
+
+.landing-copy h1 {
+    font-size: clamp(2.7rem, 5vw, 4.8rem);
+    line-height: 1.02;
+    letter-spacing: -.065em;
+    color: var(--navy);
+    margin: .8rem 0 1.1rem
+}
+
+.landing-copy h1 span {
+    color: #2e6fbd
+}
+
+.landing-copy>p {
+    font-size: 1.08rem;
+    max-width: 540px;
+    color: var(--muted)
+}
+
+.landing-points {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem
+}
+
+.landing-points span {
+    font-size: .85rem;
+    font-weight: 700;
+    color: var(--navy)
+}
+
+.landing-art img {
+    width: 100%;
+    filter: drop-shadow(0 20px 25px rgba(23, 59, 114, .08));
+    animation: float 5s ease-in-out infinite
+}
+
+.role-section {
+    width: min(1180px, calc(100% - 3rem));
+    margin: 0 auto 2.5rem
+}
+
+.role-heading {
+    text-align: center;
+    margin-bottom: 1.2rem
+}
+
+.role-heading h2 {
+    font-size: 1.5rem;
+    color: var(--navy)
+}
+
+.role-heading p {
+    color: var(--muted)
+}
+
+.role-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+    max-width: 850px;
+    margin: 0 auto
+}
+
+.role-card {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1.4rem;
+    background: #fff;
+    border: 1px solid #dce7f5;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    transition: transform .2s, border .2s
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    border-color: #90b7e8
+}
+
+.role-symbol {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 19px;
+    background: var(--blue-soft);
+    font-size: 1.9rem
+}
+
+.role-card h3 {
+    color: var(--navy);
+    font-size: 1.15rem
+}
+
+.role-card p {
+    color: var(--muted);
+    font-size: .88rem;
+    margin: .2rem 0 .8rem
+}
+
+.role-card .btn {
+    width: 100%
+}
+
+.landing-footer {
+    padding: 1.3rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: .82rem
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+}
+
+@media(max-width:800px) {
+    .landing-main {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2rem 0
+    }
+
+    .landing-copy {
+        text-align: center
+    }
+
+    .landing-copy>p {
+        margin: auto
+    }
+
+    .landing-points {
+        justify-content: center
+    }
+
+    .landing-art {
+        max-width: 480px;
+        margin: auto
+    }
+
+    .role-section {
+        margin-bottom: 1.5rem
+    }
+}
+
+@media(max-width:560px) {
+
+    .landing-header,
+    .landing-main,
+    .role-section {
+        width: calc(100% - 2rem)
+    }
+
+    .landing-header {
+        padding: 1rem 0
+    }
+
+    .landing-copy h1 {
+        font-size: 2.8rem
+    }
+
+    .landing-art {
+        display: none
+    }
+
+    .role-cards {
+        grid-template-columns: 1fr
+    }
+
+    .role-card {
+        padding: 1rem
+    }
+
+    .role-symbol {
+        width: 54px;
+        height: 54px
+    }
+
+    .landing-main {
+        padding: 2rem 0 1.5rem
+    }
+}

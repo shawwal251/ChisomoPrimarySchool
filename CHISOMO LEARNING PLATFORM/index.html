@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A friendly digital learning and teaching space for Chisomo Primary School.">
+    <title>Welcome | Chisomo Primary School</title>
+    <link rel="icon" href="assets/logo/chisomo-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/ui.js"></script>
+    <script defer src="js/landing.js"></script>
+</head>
+
+<body>
+
+    <!------------ Loading Effect ------------->
+    <a class="skip-link" href="#choose-role">Skip to role selection</a>
+
+    <div class="loading-overlay" role="status" aria-live="polite">
+        <div class="loader-card">
+            <div class="spinner" aria-hidden="true"></div>
+            <strong>Welcome to Chisomo</strong><span class="small muted">Preparing a world of learning…</span>
+        </div>
+    </div>
+
+    <!-------- Landing Page --------->
+    <div class="landing">
+
+        <!------ Header Content ------>
+        <header class="landing-header">
+            <a href="index.html" class="brand">
+                <img src="assets/logo/chisomo-logo.svg" alt="">
+                <span>Chisomo Primary School<small>Learn · Grow · Shine</small></span>
+            </a>
+            <span class="badge info">Learning made joyful</span>
+        </header>
+
+        <!---------- Main Content ----------->
+        <main class="landing-main">
+            <section class="landing-copy">
+                
+                <p class="eyebrow">A brighter way to learn</p>
+                <h1>Big dreams begin with <span>little steps.</span></h1>
+                <p>Welcome to your school’s digital learning space. Explore lessons, practise new skills, complete
+                    activities and celebrate every step forward.</p>
+
+                <div class="landing-points">
+                    <span>✓ Learn at your pace</span>
+                    <span>✓ Discover new ideas</span>
+                    <span>✓ Grow together</span>
+                </div>
+            </section>
+
+            <div class="landing-art">
+                <img src="assets/images/learning-illustration.svg" alt="Illustration of children learning together using a computer">
+            </div>
+        </main>
+
+        <!--------- Role choosing section content --------->
+        <section class="role-section" id="choose-role">
+            <div class="role-heading">
+                <h2>How would you like to continue?</h2>
+                <p>Choose your portal to get started.</p>
+            </div>
+
+            <div class="role-cards">
+                <article class="role-card">
+                    <div class="role-symbol" aria-hidden="true">
+                        <img src="assets/images/student.png" alt="" width="50">
+                    </div>
+
+                    <div style="flex:1">
+                        <h3>As a Student</h3>
+                        <p>Discover lessons, complete assignments and check your progress.</p>
+                        <a class="btn btn-primary" href="student/dashboard.html" data-role="student">Continue as a student →</a>
+                    </div>
+                </article>
+
+                <article class="role-card">
+                    <div class="role-symbol" aria-hidden="true">
+                        <img src="assets/images/teacher.png" alt="" width="50">
+                    </div>
+
+                    <div style="flex:1">
+                        <h3>As a Teacher</h3>
+                        <p>Prepare lessons, manage classwork and support every learner.</p>
+                        <a class="btn btn-gold" href="teacher/dashboard.html" data-role="teacher">Continue as a teacher →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-------- Landing-page Footer content -------->
+        <footer class="landing-footer">
+            © 2026 Chisomo Primary School ·
+            <br>
+            <small>Developed by Group 8</small>
+        </footer>
+    </div>
+</body>
+
+</html>
