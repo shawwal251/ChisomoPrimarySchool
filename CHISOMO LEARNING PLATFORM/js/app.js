@@ -470,7 +470,7 @@
             return `
                 <article class="panel stack">
                     <div class="between">
-                        <div class="avatar purple">✏️</div>
+                        <div class="avatar purple">Q</div>
 
                         ${badge(done.length ? 'Attempted' : 'Ready')}
                     </div>
