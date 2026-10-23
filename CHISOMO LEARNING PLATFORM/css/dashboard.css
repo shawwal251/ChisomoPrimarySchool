@@ -84,11 +84,6 @@
     color: var(--navy) !important
 }
 
-.side-nav .nav-icon {
-    width: 22px;
-    text-align: center;
-    font-size: 1rem
-}
 
 .dropdown-toggle {
     justify-content: space-between

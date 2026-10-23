@@ -435,13 +435,6 @@ tbody tr:last-child td {
     border-bottom: 0
 }
 
-.notice {
-    padding: .85rem 1rem;
-    border-radius: 12px;
-    background: var(--blue-soft);
-    color: var(--navy);
-    font-size: .9rem
-}
 
 .notice.success {
     background: var(--green-soft);

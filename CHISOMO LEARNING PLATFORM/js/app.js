@@ -74,10 +74,10 @@
                     <article class="subject-card">
                         <div class="avatar">
                             ${l.subject === 'Mathematics'
-                                ? '➗'
+                                ? '+'
                                 : l.subject === 'Science'
-                                    ? '🔬'
-                                    : '📘'}
+                                    ? 'L'
+                                    : 'R'}
                         </div>
 
                         <div style="flex:1">
@@ -117,7 +117,7 @@
                 .slice(0, 3)
                 .map(a => `
                     <div class="activity-item">
-                        <div class="avatar gold">📝</div>
+                        <div class="avatar gold">A</div>
 
                         <div style="flex:1">
                             <p>
@@ -161,10 +161,10 @@
                     <div class="between">
                         <div class="avatar">
                             ${l.subject === 'Mathematics'
-                                ? '➗'
+                                ? '+'
                                 : l.subject === 'Science'
-                                    ? '🔬'
-                                    : '📘'}
+                                    ? 'L'
+                                    : 'R'}
                         </div>
 
                         ${badge(
@@ -259,7 +259,7 @@
                 </div>
 
                 <div class="notice">
-                    💡 <strong>Remember:</strong>
+                    ! <strong>Remember:</strong>
                     Read the lesson carefully, then explain one thing you
                     learned in your own words.
                 </div>
@@ -361,11 +361,11 @@
 
                         <div class="between wrap small">
                             <span>
-                                📅 Due ${formatDate(a.dueDate)}
+                                Due ${formatDate(a.dueDate)}
                             </span>
 
                             <span>
-                                🎯 ${a.totalMarks} marks
+                                ${a.totalMarks} marks
                             </span>
                         </div>
 
@@ -696,7 +696,7 @@
                             class="avatar green"
                             style="width:74px;height:74px;font-size:2rem;border-radius:50%"
                         >
-                            ${percentage >= 70 ? '🎉' : '📚'}
+                            ${percentage >= 70 ? 'Awesome!' : 'Try Again!'}
                         </div>
 
                         <p class="eyebrow">
@@ -873,10 +873,10 @@
                 <article class="panel resource-card">
                     <div class="avatar">
                         ${r.type === 'Worksheet'
-                            ? '📄'
+                            ? 'M'
                             : r.subject === 'Science'
-                                ? '🔬'
-                                : '📚'}
+                                ? 'S'
+                                : 'R'}
                     </div>
 
                     <div style="flex:1">
@@ -975,7 +975,7 @@
                 .slice(0, 4)
                 .map(a => `
                     <div class="activity-item">
-                        <div class="avatar gold">📝</div>
+                        <div class="avatar gold">A</div>
 
                         <div style="flex:1">
                             <p>
@@ -1440,7 +1440,7 @@
             .map(c => `
                 <article class="panel stack">
                     <div class="between">
-                        <div class="avatar">🏫</div>
+                        <div class="avatar">C</div>
                         ${badge('Active')}
                     </div>
 
@@ -1639,7 +1639,7 @@
         el.innerHTML = quizzes.map(q => `
             <article class="panel stack">
                 <div class="between">
-                    <div class="avatar purple">✏️</div>
+                    <div class="avatar purple">Q</div>
                     ${badge(q.status)}
                 </div>
 
